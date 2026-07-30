@@ -28,9 +28,39 @@
             <p class="title-description">Campos obrigatórios para o atendimento atual estão sinalizados.</p>
         </section>
         <section class="form-conteiner">
-            <form action="#" method="post">
+            <form action="#" method="post" class="personal-form">
                 <label class="title-form" for="#">Identificação</label>
                 <label class="subtitle-form" for="#">Confirme os dados de identidade antes de prosseguir.</label>
+                <section class="inputs-form">
+                    <div class="box-input">
+                        <label for="" class="input-label">Nome *</label>
+                        <input type="text" required class="input-element">
+                    </div>
+                    <div class="box-input">
+                        <label for="" class="input-label">Sobrenome *</label>
+                        <input type="text" required class="input-element">
+                    </div>
+                    <div class="box-input">
+                        <label for="" class="input-label">CPF *</label>
+                        <input type="text" required class="input-element">
+                    </div>
+                    <div class="box-input">
+                        <label for="" class="input-label">Data de nascimento *</label>
+                        <input type="text" required class="input-element">
+                    </div>
+                    <div class="box-input">
+                        <label for="" class="input-label">Sexo</label>
+                        <select name="sexo" id="input-element" class="input-element">
+                            <option value="Null">Prefiro não informar</option>
+                            <option value="Feminino">Feminino</option>
+                            <option value="Masculino">Masculino</option>
+                        </select>
+                    </div>
+                    <div class="box-input">
+                        <label for="" class="input-label">Nome da mãe ou referência</label>
+                        <input type="text" class="input-element">
+                    </div>
+                </section>
             </form>
         </section>
     </main>
