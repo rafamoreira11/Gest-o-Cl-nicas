@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #E6F4FE;
+}
+
+.menu-conteiner{
+    padding: 30px;
+    width: 20%;
+    background-color: #174A7E;
+}
+
+.logo{
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    color: white;
+}
+
+.logo-name{
+    font-size: 16pt;
+}
+
+.logo-icon{
+    border-radius: 10px;
+    width: 40px;
+    text-align: center;
+    color: #174A7E;
+    font-size: 26pt;
+    background-color: white;
+}
+
+.options{
+    margin-top: 40px;
+    color: white;    
+    width: 100%;
+    
+}
+
+.option-content{
+    border: 1px solid rgba(255, 255, 255, 0.596);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    align-items: center;
+    font-size: 14pt;
+    display: flex;
+}
+
+.option-content:hover{
+    transition: 0.5s;
+    background-color: white;
+    color: #174A7E;
+}
+
+.list-style{
+    margin-right: 20px;
+    font-size: 26pt;
+}
+
+main{
+    width: 80%;
+    padding: 30px;
+}
+
+.route-now{
+    font-weight: bold;
+}
+
+.titles-section{
+    margin: 80px 0px 20px 0px;
+}
+
+.title-description{
+    margin-top: 10px;
+}
+
+.form-conteiner{
+    border-radius: 10px;
+    padding: 30px;
+    width: 80%;
+    background-color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-form{
+    font-size: 16pt;
+    margin-bottom: 10px;
+}
+
+.subtitle-form{
+    opacity: 0.7;
+}
