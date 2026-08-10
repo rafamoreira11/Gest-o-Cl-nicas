@@ -10,7 +10,7 @@ const sequelize = new Sequelize(
     }
 )
 
-sequelize.sync({force: false}).then(()=>{
+sequelize.authenticate().then(()=>{
     console.log("Conexão com banco de dados realizada com sucesso!")
 }).catch((err)=>{
     console.log("Erro ao conectar banco de dados - "+err)
