@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Cadastro de paciente</title>
+    <script src="./scripts.js" defer></script>
 </head>
 <body>
     <nav class="menu-conteiner">
@@ -28,28 +29,28 @@
             <p class="title-description">Campos obrigatórios para o atendimento atual estão sinalizados.</p>
         </section>
         <section class="form-conteiner">
-            <form action="#" method="post" class="personal-form">
-                <label class="title-form" for="#">Identificação</label>
-                <label class="subtitle-form" for="#">Confirme os dados de identidade antes de prosseguir.</label>
+            <form action="http://localhost:3000/cadastro" method="POST" id="personal-form" class="personal-form">
+                <label class="title-form" >Identificação</label>
+                <label class="subtitle-form" >Confirme os dados de identidade antes de prosseguir.</label>
                 <section class="inputs-form">
                     <div class="box-input">
-                        <label for="" class="input-label">Nome *</label>
-                        <input type="text" required class="input-element">
+                        <label class="input-label">Nome *</label>
+                        <input type="text" required class="input-element" id="input-nome" name="nome">
                     </div>
                     <div class="box-input">
-                        <label for="" class="input-label">Sobrenome *</label>
-                        <input type="text" required class="input-element">
+                        <label class="input-label">Sobrenome *</label>
+                        <input type="text" required class="input-element" id="input-sobrenome" name="sobrenome">
                     </div>
                     <div class="box-input">
-                        <label for="" class="input-label">CPF *</label>
-                        <input type="text" required class="input-element">
+                        <label class="input-label">CPF *</label>
+                        <input type="text" required class="input-element" id="input-cpf" name="cpf">
                     </div>
                     <div class="box-input">
-                        <label for="" class="input-label">Data de nascimento *</label>
-                        <input type="text" required class="input-element">
+                        <label class="input-label">Data de nascimento *</label>
+                        <input type="text" required class="input-element" id="input-data-nasc" name="data_nasc">
                     </div>
                     <div class="box-input">
-                        <label for="" class="input-label">Sexo</label>
+                        <label class="input-label">Sexo</label>
                         <select name="sexo" id="input-element" class="input-element">
                             <option value="Null">Prefiro não informar</option>
                             <option value="Feminino">Feminino</option>
@@ -57,12 +58,12 @@
                         </select>
                     </div>
                     <div class="box-input">
-                        <label for="" class="input-label">Nome da mãe ou referência</label>
-                        <input type="text" class="input-element">
+                        <label class="input-label">Nome da mãe ou referência</label>
+                        <input type="text" class="input-element" id="input-nome-mae" name="nome_mae">
                     </div>
                 </section>
                 <section class="button-conteiner">
-                    <button class="button-submit" type="submit">Cadastrar</button>
+                    <button class="button-submit" type="submit" id="button-submit">Cadastrar</button>
                 </section>
             </form>
         </section>

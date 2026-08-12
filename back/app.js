@@ -11,7 +11,9 @@ app.post("/cadastro",(req,res)=>{
         nome: req.body.nome,
         sobrenome: req.body.sobrenome,
         cpf: req.body.cpf,
-        data_nasc: req.body.data_nasc
+        data_nasc: req.body.data_nasc,
+        sexo: req.body.sexo,
+        nome_mae: req.body.nome_mae
     }).then(()=>{
         res.send("Informações salvas no baco de dados")
     }).catch((err)=>{
