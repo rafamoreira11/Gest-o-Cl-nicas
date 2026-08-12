@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Cadastro de paciente</title>
-    <script src="./scripts.js" defer></script>
+    <script src="../scripts.js" defer></script>
 </head>
 <body>
     <nav class="menu-conteiner">
@@ -15,8 +15,8 @@
         </section>
         <section class="options">
             <ul style="list-style: none;" class="list-options">
-                <li class="option-content"><span class="list-style">•</span>Cadastrar paciente</li>
-                <li class="option-content"><span class="list-style">•</span>Lista de pacientes</li>
+                <li class="option-content" id="cadastrar-pacientes"><span class="list-style">•</span>Cadastrar paciente</li>
+                <li class="option-content" id="listar-pacientes"><span class="list-style">•</span>Lista de pacientes</li>
             </ul>
         </section>
     </nav>
@@ -29,7 +29,7 @@
             <p class="title-description">Campos obrigatórios para o atendimento atual estão sinalizados.</p>
         </section>
         <section class="form-conteiner">
-            <form action="http://localhost:3000/cadastro" method="POST" id="personal-form" class="personal-form">
+            <form action="http://localhost:3000/" method="POST" id="personal-form" class="personal-form">
                 <label class="title-form" >Identificação</label>
                 <label class="subtitle-form" >Confirme os dados de identidade antes de prosseguir.</label>
                 <section class="inputs-form">
