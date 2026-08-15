@@ -1,3 +1,5 @@
+/* CSS - Geral*/
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -77,6 +79,8 @@ main{
     font-weight: bold;
 }
 
+/* CSS - Página de cadastro */
+
 .titles-section{
     margin: 50px 0px 20px 0px;
 }
@@ -145,4 +149,57 @@ form{
     font-size: 14pt;
     color: white;
     border-radius: 10px;
+}
+
+/* CSS - Lista de pacientes*/
+
+.list-conteiner{
+    margin-top: 60px;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    background-color: white;
+    
+}
+
+.table-conteiner{
+    margin-top: 30px;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+table{
+    width: 100%;
+}
+
+thead{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+tr{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+th{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 40px;
+}
+
+td{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    text-align: center;
 }

@@ -2,7 +2,9 @@ const express = require('express')
 const app = express()
 const Pacientes = require("./models/Pacientes")
 const bodyParser = require("body-parser")
+const cors = require("cors")
 
+app.use(cors())
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
@@ -22,6 +24,16 @@ app.post("/",(req,res)=>{
         })
     }).catch((err)=>{
         res.send("Falha ao cadastrar usuário - "+err)
+    })
+})
+
+app.get("/pacientes", (req,res)=>{
+    Pacientes.findAll().then((pacientes)=>{
+        res.json(pacientes)
+    }).catch((err)=>{
+        res.status(500).json({
+            erro: "Erro ao buscar pacientes"
+        })
     })
 })
 
